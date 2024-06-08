@@ -6,15 +6,15 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 README = open(os.path.join(SCRIPT_DIR, "README.md"), "rb").read().decode("utf8")
 
 setup(
-    name="gym3",
+    name="pufferai_gym3",
     packages=find_packages(),
-    version="0.3.3",
+    version="0.3.3.2",
     install_requires=[
         "numpy>=1.11.0,<2.0.0",
         "cffi>=1.13.0,<2.0.0",
         "imageio>=2.6.0,<3.0.0",
         "imageio-ffmpeg>=0.3.0,<0.4.0",
-        "glfw>=1.8.6,<2.0.0",
+        "glfw==2.7",
         "moderngl>=5.5.4,<6.0.0",
     ],
     package_data={"gym3": ["libenv.h", "internal/font.bin"]},
